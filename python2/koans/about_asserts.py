@@ -53,7 +53,7 @@ class AboutAsserts(Koan):
         """
 
         # This throws an AssertionError exception
-        self.assertFalse
+        assert True
 
     def test_that_sometimes_we_need_to_know_the_class_type(self):
         """
