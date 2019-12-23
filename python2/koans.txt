@@ -1,4 +1,6 @@
 # Lines starting with # are ignored.
+#
+# Koans already solved:
 koans.about_asserts.AboutAsserts
 koans.about_strings.AboutStrings
 koans.about_none.AboutNone
@@ -11,31 +13,51 @@ koans.about_methods.AboutMethods
 koans.about_control_statements.AboutControlStatements
 koans.about_true_and_false.AboutTrueAndFalse
 koans.about_sets.AboutSets
+#
+# By Dec 20th:
 koans.about_triangle_project.AboutTriangleProject
 koans.about_exceptions.AboutExceptions
 koans.about_triangle_project2.AboutTriangleProject2
+#
+# By Jan 3rd:
 koans.about_iteration.AboutIteration
 koans.about_comprehension.AboutComprehension
 koans.about_generators.AboutGenerators
+#
+# By Jan 10th:
 koans.about_lambdas.AboutLambdas
 koans.about_scoring_project.AboutScoringProject
 koans.about_classes.AboutClasses
+#
+# By Jan 17th:
 koans.about_new_style_classes.AboutNewStyleClasses
 koans.about_with_statements.AboutWithStatements
 koans.about_monkey_patching.AboutMonkeyPatching
+#
+# By Jan 24th:
 koans.about_dice_project.AboutDiceProject
 koans.about_method_bindings.AboutMethodBindings
 koans.about_decorating_with_functions.AboutDecoratingWithFunctions
+#
+# By Jan 31st:
 koans.about_decorating_with_classes.AboutDecoratingWithClasses
 koans.about_inheritance.AboutInheritance
 koans.about_multiple_inheritance.AboutMultipleInheritance
+#
+# By Feb 7th:
 koans.about_scope.AboutScope
 koans.about_modules.AboutModules
 koans.about_packages.AboutPackages
+#
+# By Feb 14th:
 koans.about_class_attributes.AboutClassAttributes
 koans.about_attribute_access.AboutAttributeAccess
 koans.about_deleting_objects.AboutDeletingObjects
+#
+# By Feb 21st:
 koans.about_proxy_object_project.AboutProxyObjectProject
 koans.about_proxy_object_project.TelevisionTest
+#
+# By Feb 28th:
 koans.about_extra_credit.AboutExtraCredit
 koans.about_regex.AboutRegex
