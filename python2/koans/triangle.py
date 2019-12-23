@@ -18,7 +18,12 @@
 #   about_triangle_project_2.py
 #
 def triangle(a, b, c):
-    # DELETE 'PASS' AND WRITE THIS CODE
+    if (a == b == c):
+        return 'equilateral'
+    elif (a == b or a == c or b == c):
+        return 'isosceles'
+    else:
+        return 'scalene'
     pass
 
 
