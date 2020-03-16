@@ -35,12 +35,14 @@ from runner.koan import *
 
 def score(dice):
     final_score = 0
-    repeated_nums = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    repeated_nums = [0, 0, 0, 0, 0, 0]
     for number in dice:
-        repeated_nums[number]=repeated_nums[number] + 1
-    for i in range(0,10):
-        aux1 = int (repeated_nums[i] / 3)
+        repeated_nums[number-1]=repeated_nums[number-1] + 1
+    for i in xrange(len(repeated_nums)):
+        aux1 = repeated_nums[i] // 3
         aux2 = repeated_nums[i] % 3
+        # This change the values of i from 0-5 to 1-6.
+        i += 1
         if i == 1:
             final_score = final_score + (aux1 * 1000) + (aux2 * 100)
         elif i == 5:
