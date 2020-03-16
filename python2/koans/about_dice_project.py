@@ -9,6 +9,7 @@ import random
 class DiceSet(object):
     def __init__(self):
         self._values = None
+        self._start = False
 
     @property
     def values(self):
@@ -17,7 +18,18 @@ class DiceSet(object):
     def roll(self, n):
         # Needs implementing!
         # Tip: random.randint(min, max) can be used to generate random numbers
-        pass
+        last_roll = list()
+        while True:    
+            if self._start == True:
+                last_roll = self._values
+            self._start = True
+            self._values = list()
+            iterat = range (0, n)
+            for x in iterat:
+                self._values.append(random.randint(1, 6))
+            if last_roll != self._values:
+                break
+            pass
 
 
 class AboutDiceProject(Koan):
@@ -60,6 +72,11 @@ class AboutDiceProject(Koan):
         # If the rolls are random, then it is possible (although not
         # likely) that two consecutive rolls are equal.  What would be a
         # better way to test this?
+
+        # I'm not sure if it's the best way, but I added a flag called _start that checks if the dice
+        # roll was called before, and if it was, get the last value in order to compare with the current
+        # one, if it's the same, what it does is rolls again and do the same check, in only breaks when
+        # the list are different
 
     def test_you_can_roll_different_numbers_of_dice(self):
         dice = DiceSet()
